@@ -82,15 +82,15 @@ clear_block_list()
 int
 check_block_list(char *addr)
 {
-    size_t addr_len = strlen(addr);
+    /* size_t addr_len = strlen(addr); */
 
-    if (cache_key_exist(block_list, addr, addr_len)) {
-        int *count = NULL;
-        cache_lookup(block_list, addr, addr_len, &count);
+    /* if (cache_key_exist(block_list, addr, addr_len)) { */
+    /*     int *count = NULL; */
+    /*     cache_lookup(block_list, addr, addr_len, &count); */
 
-        if (count != NULL && *count > MAX_TRIES)
-            return 1;
-    }
+    /*     if (count != NULL && *count > MAX_TRIES) */
+    /*         return 1; */
+    /* } */
 
     return 0;
 }
